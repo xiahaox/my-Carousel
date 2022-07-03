@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/mage/calendar.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/css/styles-m.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/Astound_Affirm/affirm-promo.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/mage/gallery/gallery.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/Mageplaza_SocialLogin/css/style.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/Mageplaza_Core/css/grid-mageplaza.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/Mageplaza_Core/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="all"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/Mageplaza_Core/css/magnific-popup.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/css/styles-l.min.css" />
+  <link rel="stylesheet" type="text/css" media="print"
+    href="https://www.flexispot.com/static/version1648026077/frontend/Eight25media/flexispot/en_US/css/print.min.css" />
+  <link
+    href=" https://staticw2.yotpo.com/pLAAy9iizbQfrfhX3zsRRTNskJDv5sL9I5sCKObl/widget.css?widget_version=2022-03-24_09-44-46"
+    rel="stylesheet" property="stylesheet" media="all" type="text/css" />
+</head>
+<style>
+  #FS_DAY {}
+
+  #FS_DAY .hasPad {
+    width: 1280px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #FS_DAY .blue-bg {
+    background-color: #0584d2;
+  }
+
+  #FS_DAY .banner {
+    position: relative;
+  }
+
+  .scree-m {
+    display: none;
+  }
+
+  #FS_DAY .banner-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    bottom: 4%;
+  }
+
+  #FS_DAY .banner-container .footer-left-enter-content {
+    width: 70%;
+    border: 2px solid #0584d2;
+    border-radius: 6px 0 0 6px;
+    padding: 10px 16px;
+    border-right: none;
+  }
+
+  #FS_DAY .banner-container .footer-left-enter-content #newsletter::-webkit-input-placeholder {
+    color: #0584d2;
+  }
+
+  #FS_DAY .banner-container .footer-left-btn {
+    width: 36%;
+    border-radius: 0 6px 6px 0;
+  }
+
+  #FS_DAY .nav_module {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    transform: translateX(2%);
+  }
+
+
+  #FS_DAY .footer-left-btn {
+    padding: 0;
+  }
+
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(1):hover {
+    background-image: url("./img/gray1.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(2):hover,
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(3):hover,
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(4):hover {
+    background-image: url("./img/gray2.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(5):hover {
+    background-image: url("./img/gray3.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(1).active {
+    background-image: url("./img/red1.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(2).active,
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(3).active,
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(4).active {
+    background-image: url("./img/red2.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(5).active {
+    background-image: url("./img/red3.png");
+  }
+
+  #FS_DAY .nav_module .nav_module_item {
+    width: 19.7%;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(1) {
+    background-image: url("./img/light-grey1.png");
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(2) {
+    background-image: url("./img/light-grey2.png");
+    transform: translateX(-6%);
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(3) {
+    background-image: url("./img/light-grey2.png");
+    transform: translateX(-12%);
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(4) {
+    background-image: url("./img/light-grey2.png");
+    transform: translateX(-18%);
+  }
+
+  #FS_DAY .FS_DAY_body .nav_module .nav_module_item:nth-child(5) {
+    background-image: url("./img/light-grey3.png");
+    transform: translateX(-24%);
+  }
+
+  #FS_DAY .nav_module .nav_module_item_text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 55px;
+    color: #FFFFFF;
+  }
+
+  #FS_DAY .nav_module .nav_module_item_text img {
+    margin-right: 8px;
+    margin-bottom: 5px;
+  }
+
+  #FS_DAY .FlashSale_module,
+  #FS_DAY .only_module,
+  #FS_DAY .Linus_module,
+  #FS_DAY .AllDeals_module,
+  #FS_DAY .DIY-module {
+    margin-top: 40px;
+  }
+
+  #FS_DAY .only_module {
+    padding: 0 15px;
+  }
+
+  .module_title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    line-height: 130px;
+  }
+
+
+
+  .only_module .rules,
+  .tooltip-popup-top .rules {
+    background: #E24145;
+    width: 75px;
+    height: 25px;
+    color: #FFFFFF;
+    margin: auto auto 25px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+  }
+
+
+
+
+
+
+  #FS_DAY .rating-result {
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  #FS_DAY .rating-result>span:before {
+    color: #FEC600;
+    position: relative;
+    z-index: 2;
+    -webkit-font-smoothing: antialiased;
+    font-family: "yotpo-widget-font" !important;
+    font-size: 18px;
+    height: 28px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    content: '\e60e''\e60e''\e60e''\e60e''\e60e';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+  }
+
+
+  #FS_DAY .nav_module_phone {
+    display: none;
+  }
+
+  .only_module .only_module_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 6%;
+  }
+
+  .only_module .only_module_content .item .text {
+    color: #002675;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+
+  .red_Font {
+    color: #E54848;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .big_blue_Font {
+    color: #002675;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+
+
+  #FS_DAY .foot_module {
+    background: rgba(0, 0, 0, 0.2);
+    height: 300px;
+  }
+
+  #FS_DAY .foot_module_conent {
+    display: flex;
+    width: 1280px;
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+  }
+
+  #FS_DAY .foot_module .foot_module_l {
+    width: 75%;
+    padding-left: 3%;
+  }
+
+
+  #FS_DAY .FlashSale_module {
+    background-image: url('./img/flashbg.png');
+    background-size: 100%;
+    margin-top: 120px
+  }
+
+  .FlashSale_module .content {
+    width: 100%;
+    height: 700px;
+    margin: 100px auto 0;
+    position: relative;
+  }
+
+  .FlashSale_module .imglist {
+    width: 100%;
+    height: 100%;
+  }
+
+  .FlashSale_module .imglist>.ulbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .FlashSale_module .imglist>.ulbox>li {
+    position: absolute;
+    width: 56%;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .FlashSale_module .imglist>.ulbox>li img {
+    width: 100%;
+  }
+
+  .FlashSale_module .list1 {
+    transform: translateX(15%) scale(0.81) rotateY(30deg);
+    transform-origin: 0% 100%;
+    z-index: 1;
+    top: -55px;
+    opacity: 0.7;
+  }
+
+  .FlashSale_module .list2 {
+    transform: translateX(40%);
+    z-index: 2;
+  }
+
+  .FlashSale_module .list3 {
+    transform: translateX(65%) scale(0.81) rotateY(30deg);
+    transform-origin: 100% 100%;
+    z-index: 1;
+    opacity: 0.7;
+    top: -55px;
+  }
+
+  .FlashSale_module .list4,
+  .FlashSale_module .list5 {
+    transform: translateX(45%) scale(0.81);
+    z-index: 1;
+    opacity: 0.7;
+    top: -55px;
+  }
+
+  .FlashSale_module .flash_product_des {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 10% 21px 4%;
+    color: #FFFFFF;
+    font-size: 16px;
+    background: #E64849;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .btn {
+    background: #FFFFFF;
+    border-radius: 20px;
+    width: 136px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #E64849;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-one {
+    font-weight: 500;
+    font-size: 26px;
+    margin: 4px 0;
+    line-height: 30px;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-two {
+    position: relative;
+    width: 272px;
+    height: 12px;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-two span:nth-of-type(1) {
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-two span:nth-of-type(2) {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(90deg, #DF757A 2.59%, #F6D147 100%);
+    border-radius: 20px;
+    right: 0;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-three {
+    padding-left: 20px;
+    margin-top: 4px;
+  }
+
+  .FlashSale_module .flash_product_des .flex-left .flex-left-three li {
+    list-style: disc;
+    margin: 4px 0;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-one span:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    margin-right: 19px;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-one span:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration-line: line-through;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-three {
+    height: 36px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 16px;
+    line-height: 36px;
+    color: #E64849;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-three .btn {
+    background: #FFFFFF;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    color: #E64849;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-two {
+    margin: 10px 0 15px 0;
+    text-align: right;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-two .rating-result {
+    width: unset !important;
+  }
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-two .rating-result>span:before {
+    letter-spacing: 6px !important;
+  }
+
+  .FlashSale_module_title {
+    text-align: center;
+  }
+
+  .FlashSale_module_title img {
+    margin-top: -70px;
+  }
+
+  .FlashSale_module_title .time_value {
+    display: flex;
+    font-weight: 400;
+    padding: 0 5%;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #026ED1;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+
+  .FlashSale_module_title .time_value .choose {
+    color: #E64849;
+    font-weight: 700;
+  }
+
+  .FlashSale_module_title .sale_value {
+    height: 15px;
+    margin-top: 15px;
+    padding: 0 10%;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line {
+    height: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line .blue {
+    background-color: #026ED1;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line .blue::after {
+    width: 13px;
+    height: 13px;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div {
+    position: relative;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: white;
+    border-radius: 50%;
+    right: -7px;
+    top: -4px;
+    z-index: 1;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line .blue::after {
+    background: #026ED1
+  }
+
+  .FlashSale_module_title .sale_value .whire_line .choose::before {
+    background: #FFDD00;
+    position: absolute;
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    right: -4px;
+    top: -1px;
+    z-index: 2;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-last-child(1)::after {
+    width: 0px;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(1) {
+    width: 5%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(2) {
+    width: 20%;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(3) {
+    width: 23%;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(4) {
+    width: 30%;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(5) {
+    width: 30%;
+  }
+
+  .FlashSale_module_title .sale_value .whire_line>div:nth-child(6) {
+    width: 9%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .FlashSale_module .imglist>.ulbox>li .title_tip {
+    width: 125px;
+    position: absolute;
+    height: 58px;
+    background-image: url("./img/tipright.png");
+    top: -9px;
+    background-size: 100% 100%;
+    right: 2px;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 58px;
+  }
+
+
+  .FlashSale_module .content .nextBtn {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: #E64849;
+    border-radius: 50%;
+    top: 46%;
+    cursor: pointer;
+  }
+
+  .FlashSale_module .content .nextBtn:hover,
+  .only_module .rules:hover,
+  .only_module .only_module_content .item .copy_btn:hover {
+    background: #BF3B3C;
+  }
+
+  .FlashSale_module .content .btn-right {
+    right: 0;
+  }
+
+  .FlashSale_module .content .btn-right>div {
+    transform: rotateZ(45deg);
+
+  }
+
+  .FlashSale_module .content .btn-left>div {
+    transform: rotateZ(225deg);
+  }
+
+  .FlashSale_module .content .nextBtn>div {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    border-left-width: 0;
+    border-bottom-width: 0;
+
+  }
+
+  .DIY-module .btn_more {
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+    cursor: pointer;
+  }
+
+  #FS_DAY .DIY-module .diy-content {
+    margin: 44px 0;
+  }
+
+  .DIY-module .content-box {
+    display: flex;
+  }
+
+  .DIY-module .content-box .item {
+    margin: 0 10px;
+  }
+
+  #message-container {
+    position: fixed;
+    left: 0;
+    top: 35%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #message-container .message {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 40px;
+    box-shadow: 0 0 10px 0 #eee;
+    font-size: 14px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  #message-container .message .text {
+    padding: 0 20px 0 5px;
+  }
+
+  #message-container .message .close {
+    cursor: pointer;
+    color: #999;
+  }
+
+  @keyframes message-move-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #message-container .message.move-in {
+    animation: message-move-in 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes message-move-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  #message-container .message.move-out {
+    animation: message-move-out 0.3s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  .warmUp_only_module {
+    background-image: url("./img/fast-bg.png");
+    background-size: 100% 100%;
+  }
+
+  /* 弹窗 */
+  .tooltip-popup,
+  .tooltip-overlayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .tooltip-overlayer {
+    z-index: 221;
+    background-color: rgba(47, 53, 65, .8);
+    cursor: pointer;
+  }
+
+  .tooltip-popup {
+    z-index: 222;
+    margin: 0 auto;
+    max-width: 700px;
+    transform: scale(0);
+    transition: all .2s;
+  }
+
+  .tooltip-popup-main {
+    width: 95%;
+    max-width: 700px;
+    height: 75%;
+    background-image: url("./img/rules_bg.png");
+    background-size: 100% 100%;
+    margin: 183px auto;
+    background-color: #fff;
+    position: relative;
+  }
+
+  .tooltip-popup-top {
+    position: relative;
+    padding: 15px 10px 13px;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .tooltip-popup-content {
+    padding: 4%;
+    min-height: 153px;
+    text-align: center;
+    line-height: 153px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .popup-close {
+    text-align: right;
+    font-size: 24px;
+  }
+
+  .tooltip-popup-content .part {
+    color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 27px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .tooltip-popup-content .bottom-part {
+    color: #0584D2;
+  }
+
+  /* .Linus_module .bottom_part .more:hover {
+    background: #2c70b3;
+  } */
+
+  .FlashSale_module .flash_product_des .flex-right .flex-right-three .btn:hover {
+    box-shadow: 6px 6px 10px #00000057;
+  }
+
+  .AllDeals_module_more .btn_more:hover,
+  .Linus_module .bottom_part .more:hover {
+    transition: all .5s;
+    transform: translateY(-4px);
+  }
+
+  /* --------------- */
+
+  @media (max-width:1250px) {
+
+    .FlashSale_module .content .nextBtn:hover,
+    .only_module .rules:hover,
+    .only_module .only_module_content .item .copy_btn:hover {
+      background: #E64849;
+    }
+
+    #FS_DAY .nav_module_pc {
+      display: none;
+    }
+
+    #FS_DAY .AllDeals_module {
+      padding: 0 20px;
+    }
+
+    #FS_DAY .banner-container .footer-left-enter {
+      height: 35px;
+      margin: 2px 0;
+    }
+
+    #FS_DAY .banner-container .footer-left-enter-content {
+      padding: 6px 16px;
+    }
+
+    .only_module .only_module_content .item .text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .big_blue_Font,
+    .red_Font {
+      font-size: 18px;
+    }
+
+    .Linus_module_content_right .middle_part {
+      height: 200px;
+    }
+
+    .Linus_module .bottom_part {
+      height: 44px;
+      margin-top: 4px;
+    }
+
+    .Linus_module .bottom_part .price {
+      font-size: 16px;
+    }
+
+    .Linus_module .bottom_part .more {
+      font-size: 12px;
+      height: 23px;
+      width: 95px;
+      line-height: 23px;
+    }
+
+    .Linus_module_content_right .top_part .desc0 {
+      font-size: 16px;
+    }
+
+    .Linus_module_content_right .top_part .desc1 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .AllDeals_module_tabs .product-item .wuxing {
+      font-size: 16px;
+      width: 23%;
+    }
+
+    .Linus_module .Linus_module_content_left {
+      margin-top: auto;
+    }
+
+    .Linus_module_content_right .middle_part .name {
+      font-size: 16px;
+      margin: 1px 0;
+      line-height: 17px;
+    }
+
+    .Linus_module_content_right .middle_part .desc {
+      font-size: 12px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .flex-left-one {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .btn {
+      width: 83px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 18px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .flex-left-two {
+      width: 148px;
+      height: 7px;
+    }
+
+    .FlashSale_module .imglist>.ulbox>li .title_tip {
+      width: 80px;
+      height: 40px;
+      font-size: 13px;
+      line-height: 40px;
+    }
+
+    .FlashSale_module_title .time_value {
+      font-size: 12px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .flex-left-three li {
+      font-size: 9px;
+      line-height: 13px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-right .flex-right-one span:nth-of-type(1) {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    .AllDeals_module_tabs .product-item .wuxing .text {
+      top: 20%;
+      font-size: 14px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-right .flex-right-one span:nth-of-type(2) {
+      font-size: 12px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-right .flex-right-three .btn {
+      width: 74px;
+      font-size: 10px;
+      line-height: 25px;
+      height: 25px;
+    }
+
+    #FS_DAY .rating-result>span:before {
+      font-size: 14px;
+      letter-spacing: 1px !important;
+    }
+
+    .FlashSale_module .imglist>.ulbox>li {
+      width: 75%;
+    }
+
+    .FlashSale_module .list1 {
+      transform: translateX(2%) scale(0.81) rotateY(30deg);
+
+    }
+
+    .FlashSale_module .list2 {
+      transform: translateX(16%);
+    }
+
+    .FlashSale_module .list3 {
+      transform: translateX(31%) scale(0.81) rotateY(30deg);
+
+    }
+
+    .FlashSale_module .list4,
+    .FlashSale_module .list5 {
+      transform: translateX(16%) scale(0.81);
+    }
+
+    .FlashSale_module .flash_product_des {
+      padding: 7px 3% 3px 3%;
+    }
+
+    .FlashSale_module .content .nextBtn {
+      display: none;
+    }
+
+    .Linus_module_content_right .middle_part .rating-result {
+      margin-left: 53%;
+    }
+
+    #FS_DAY .nav_module_phone {
+      margin-top: 0;
+      transform: none;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: unset;
+      overflow-x: scroll;
+      background: #FFFFFF;
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    #FS_DAY .FS_DAY_body .nav_module .nav_module_item.active .nav_module_item_text {
+      color: #E64849;
+      font-weight: 700;
+    }
+
+    #FS_DAY .nav_module_phone .nav_module_item {
+      background-image: none !important;
+      flex-shrink: 0;
+      /* width: 27%; */
+      transform: none !important;
+      width: auto !important;
+      padding: 0 5vw;
+    }
+
+    #FS_DAY .nav_module_phone .nav_module_item_text {
+      color: #666666;
+      font-size: 14px;
+      line-height: 45px;
+    }
+
+    #FS_DAY .nav_module_fixed {
+      left: 0;
+    }
+
+    .Linus_module_content {
+      padding: 0 20px;
+    }
+
+    .only_module .only_module_content::-webkit-scrollbar,
+    #FS_DAY .nav_module_phone::-webkit-scrollbar,
+    .DIY-module .content-box::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @media (max-width:768px) {
+    .scree-b {
+      display: none;
+    }
+
+    #FS_DAY .nav_module_fixed {
+      top: 49px;
+    }
+
+    .scree-m {
+      display: block;
+    }
+
+
+    .FlashSale_module .content {
+      height: 98vw;
+      overflow: hidden;
+      padding-top: 43px;
+      margin: 14px auto 0;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .flex-left-two {
+      width: 103px;
+    }
+
+    .FlashSale_module .list2 {
+      top: -23px;
+    }
+
+
+
+
+
+
+    .big_blue_Font,
+    .red_Font {
+      font-size: 16px;
+    }
+
+    .DIY-module .content-box {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      padding: 0 20px;
+    }
+
+    .DIY-module .content-box .item {
+      width: 90%;
+      flex-shrink: 0;
+    }
+
+    .AllDeals_module_more .btn_more {
+      width: 84px;
+      font-size: 12px;
+      height: 25px;
+      line-height: 26px;
+    }
+
+    .FlashSale_module .imglist>.ulbox>li {
+      width: 81%;
+      box-shadow: none
+    }
+
+    .FlashSale_module .list2 {
+      transform: translateX(12%)
+    }
+
+    .FlashSale_module .list4,
+    .FlashSale_module .list5 {
+      transform: translateX(12%) scale(0.91);
+      top: -9px;
+    }
+
+    .FlashSale_module .list1 {
+      transform: translateX(-74%) scale(0.91) rotateY(30deg);
+      top: -33px;
+    }
+
+    .FlashSale_module .list3 {
+      transform: translateX(96%) scale(0.91) rotateY(30deg);
+      top: -40px;
+    }
+
+    .FlashSale_module .imglist>.ulbox>li .title_tip {
+      width: 55px;
+      height: 25px;
+      font-size: 12px;
+      top: -4px;
+      line-height: 25px;
+    }
+
+    #FS_DAY .FlashSale_module .flash_product_des .flex-right .flex-right-one span {
+      display: block;
+      line-height: 17px;
+      text-align: right;
+      margin-right: 0px;
+    }
+
+    .FlashSale_module .flash_product_des .flex-right .flex-right-two {
+      margin: 18px 0 -2px 0;
+      text-align: right;
+    }
+
+    .FlashSale_module .flash_product_des .flex-left .btn {
+      width: 54px;
+      height: 18px;
+      line-height: 18px;
+      font-size: 16px;
+    }
+
+    .only_module .only_module_desc {
+      margin: 25px 0;
+      line-height: 14px;
+    }
+
+    #FS_DAY .FlashSale_module,
+    #FS_DAY .Linus_module,
+    #FS_DAY .AllDeals_module {
+      margin-top: 40px;
+    }
+
+    .FlashSale_module_title img {
+      margin-top: -33px;
+    }
+
+    #FS_DAY .module_title {
+      line-height: 50px
+    }
+
+    .tooltip-popup-content .part {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* .piece_box {
+    transform: translateX(-50%);
+    width: 200.5%;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+
+  .piece {
+    float: left;
+  }
+
+  .list2 {
+    overflow: hidden;
+  } */
+
+  /* ------------------- */
+
+
+  .piece_box .piece {
+    display: none;
+  }
+
+  .piece_box .active {
+    display: block;
+  }
+
+  .toggleCard {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25.5px;
+    height: 45px;
+    bottom: 31%;
+    /* width: 30%; */
+    min-width: 256px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+  }
+
+  .card_item {
+    flex: 1;
+    text-align: center;
+    color: #333333;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .activeBtn {
+    background: #026ED1;
+    box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.25), inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 25.5px;
+    width: 141px;
+    height: 35px;
+    position: absolute;
+    z-index: -1;
+    left: 2%;
+    transition: all 0.2s ease-in-out;
+  }
+
+
+  .toggleCard .activeBtn_run {
+    animation: shake-it 0.7s ease-in-out;
+  }
+
+  @keyframes shake-it {
+
+    from,
+    to {
+      transform: translateX(0px);
+    }
+
+    /* 10%,
+    30%, */
+    45% {
+      transform: translateX(7px);
+    }
+
+    /* 20%,
+    40%,
+    60%, */
+    95% {
+      transform: translateX(-7px);
+    }
+  }
+
+  .toggleCard .active {
+    color: #FFFFFF
+  }
+</style>
+
+<body>
+  <div id="FS_DAY">
+
+    <div class="FS_DAY_body">
+
+      <!-- ------------ -->
+
+      <!-- 返场去掉 -->
+      <div class="FlashSale_module navModel">
+        <div class="hasPad">
+          <div class="FlashSale_module_title">
+            <img src="./img/flashtitle.png" alt="" loading="lazy">
+            <div class="time_value">
+              <!-- 
+                配置 choose 为当前日期所在项
+               -->
+              <div class="time_value_item  " data-timer="0">
+                <div>05.20</div>
+                <div>（Ended）</div>
+              </div>
+              <div class=" time_value_item " data-timer="1">
+                <div>05.22</div>
+                <div>（Starts）</div>
+              </div>
+              <div class="time_value_item  " data-timer="2">
+                <div>05.23</div>
+                <div>（Start Soon）</div>
+              </div>
+              <div class="time_value_item " data-timer="3">
+                <div>05.24</div>
+                <div>（Start Soon）</div>
+              </div>
+              <div class="time_value_item choose" data-timer="3">
+                <div>05.25</div>
+                <div>（Start Soon）</div>
+              </div>
+            </div>
+            <div class="sale_value">
+              <div class="whire_line">
+                <!-- 
+                  配置
+                  blue      
+                  choose  进度条进度
+                 -->
+                <div class="blue"></div>
+                <div class="blue choose"></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+                <div class=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="imglist">
+              <ul class="ulbox">
+                <li class="list1">
+                  <div class="title_tip">5/20</div>
+                  <div>
+                    <img src="./img/llll.jpg" loading="lazy">
+                    <div class="flash_product_des">
+                      <div class="flex-left">
+                        <div class="btn">E7</div>
+                        <div>
+                          <div class="flex-left-one">Pro Plus Standing Desk</div>
+                          <div class="flex-left-two">
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <ul class="flex-left-three">
+                            <li>Height range：22.8‘’-48.4‘’</li>
+                            <li>Greater loading capacity up to 355Ibs</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex-right">
+                        <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                        <div class="flex-right-two">
+                          <div class="rating-result">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="flex-right-three">
+                          <a href="" class="btn">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list2">
+                  <div class="title_tip">5/22</div>
+                  <div>
+                    <img src="./img/llll.jpg" loading="lazy">
+                    <div class="flash_product_des">
+                      <div class="flex-left">
+                        <div class="btn">E7</div>
+                        <div>
+                          <div class="flex-left-one">Pro Plus Standing Desk</div>
+                          <div class="flex-left-two">
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <ul class="flex-left-three">
+                            <li>Height range：22.8‘’-48.4‘’</li>
+                            <li>Greater loading capacity up to 355Ibs</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex-right">
+                        <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                        <div class="flex-right-two">
+                          <div class="rating-result">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="flex-right-three">
+                          <a href="" class="btn">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list3">
+                  <div class="title_tip">5/24</div>
+                  <div class="toggleCard">
+                    <div class="active card_item">
+                      E7: $449.99
+                    </div>
+                    <div class="card_item">
+                      E1: $234.99
+                    </div>
+                    <div class="activeBtn"></div>
+                  </div>
+                  <div class="piece_box">
+                    <div class="piece active">
+                      <img src="./img/llll.jpg" loading="lazy">
+                      <div class="flash_product_des">
+                        <div class="flex-left">
+                          <div class="btn">E7</div>
+                          <div>
+                            <div class="flex-left-one">Pro Plus Standing Desk</div>
+                            <div class="flex-left-two">
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <ul class="flex-left-three">
+                              <li>Height range：22.8‘’-48.4‘’</li>
+                              <li>Greater loading capacity up to 355Ibs</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flex-right">
+                          <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                          <div class="flex-right-two">
+                            <div class="rating-result">
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="flex-right-three">
+                            <a href="" class="btn">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="piece">
+                      <img src="./img/llll.jpg" loading="lazy">
+                      <div class="flash_product_des">
+                        <div class="flex-left">
+                          <div class="btn">E8</div>
+                          <div>
+                            <div class="flex-left-one">Pro Plus Standing Desk</div>
+                            <div class="flex-left-two">
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <ul class="flex-left-three">
+                              <li>Height range：22.8‘’-48.4‘’</li>
+                              <li>Greater loading capacity up to 355Ibs</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flex-right">
+                          <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                          <div class="flex-right-two">
+                            <div class="rating-result">
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="flex-right-three">
+                            <a href="" class="btn">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list4">
+                  <div class="title_tip">5/24</div>
+                  <div class="toggleCard">
+                    <div class="active card_item">
+                      E7: $449.99
+                    </div>
+                    <div class="activeBtn"></div>
+                    <div class="card_item">
+                      E1: $234.99
+                    </div>
+                  </div>
+                  <div class="piece_box">
+                    <div class="piece active">
+                      <img src="./img/llll.jpg" loading="lazy">
+                      <div class="flash_product_des">
+                        <div class="flex-left">
+                          <div class="btn">E7</div>
+                          <div>
+                            <div class="flex-left-one">Pro Plus Standing Desk</div>
+                            <div class="flex-left-two">
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <ul class="flex-left-three">
+                              <li>Height range：22.8‘’-48.4‘’</li>
+                              <li>Greater loading capacity up to 355Ibs</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flex-right">
+                          <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                          <div class="flex-right-two">
+                            <div class="rating-result">
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="flex-right-three">
+                            <a href="" class="btn">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="piece">
+                      <img src="./img/llll.jpg" loading="lazy">
+                      <div class="flash_product_des">
+                        <div class="flex-left">
+                          <div class="btn">E8</div>
+                          <div>
+                            <div class="flex-left-one">Pro Plus Standing Desk</div>
+                            <div class="flex-left-two">
+                              <span></span>
+                              <span></span>
+                            </div>
+                            <ul class="flex-left-three">
+                              <li>Height range：22.8‘’-48.4‘’</li>
+                              <li>Greater loading capacity up to 355Ibs</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flex-right">
+                          <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                          <div class="flex-right-two">
+                            <div class="rating-result">
+                              <span></span>
+                            </div>
+                          </div>
+                          <div class="flex-right-three">
+                            <a href="" class="btn">Shop Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="list5">
+                  <div class="title_tip">5/25</div>
+                  <div>
+                    <img src="./img/llll.jpg" loading="lazy">
+                    <div class="flash_product_des">
+                      <div class="flex-left">
+                        <div class="btn">E7</div>
+                        <div>
+                          <div class="flex-left-one">Pro Plus Standing Desk</div>
+                          <div class="flex-left-two">
+                            <span></span>
+                            <span></span>
+                          </div>
+                          <ul class="flex-left-three">
+                            <li>Height range：22.8‘’-48.4‘’</li>
+                            <li>Greater loading capacity up to 355Ibs</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="flex-right">
+                        <div class="flex-right-one"><span>$399.99</span><span>$499.99</span></div>
+                        <div class="flex-right-two">
+                          <div class="rating-result">
+                            <span></span>
+                          </div>
+                        </div>
+                        <div class="flex-right-three">
+                          <a href="" class="btn">Shop Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="nextBtn btn-left">
+              <div></div>
+            </button>
+            <button class="nextBtn btn-right">
+              <div></div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- -------------- -->
+
+</body>
+
+</html>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  let FS_DAY_PAGE = new Object;
+
+
+  // 折叠轮播
+  function Swiper() {
+    //Flash sale 当前选中项索引值--保持实时更新
+    this.index = document.querySelector(".FlashSale_module_title .time_value .choose").getAttribute("data-timer");
+    FS_DAY_PAGE.Locked = false; //加锁
+    this.aListName = []; //默认li排序
+    this.aLi = document.querySelectorAll('.FlashSale_module .ulbox>li');
+    this.total = this.aLi.length;
+    this.clientObj = {};
+    this.imgList = document.querySelector(".FlashSale_module .imglist");
+    this.leftBtn = document.querySelector(".FlashSale_module .content .btn-left");
+    this.rightBtn = document.querySelector(".FlashSale_module .content .btn-right");
+    this.timerBtns = document.querySelectorAll(".FlashSale_module_title .time_value .time_value_item");
+
+    this.nextPic = function (stopIndex, isJump) {
+      FS_DAY_PAGE.Locked = true;
+      this.aListName.unshift(this.aListName[this.total - 1]); //把数组最后一个名字复制并插入到第一个位置来
+      this.aListName.pop() //删除最后一个值
+      this.changeLiOrder(this.aListName);
+      this.index++;
+      if (this.index > this.total - 1) {
+        this.index = 0;
+      }
+      if (!isJump) {
+        this.timerSaleChange(this.index);
+      }
+      if (this.index == stopIndex || stopIndex == undefined) {
+        // 结束Loop
+        FS_DAY_PAGE.Locked = false;
+        return false
+      }
+      // Loop
+      setTimeout(() => {
+        this.nextPic(stopIndex);
+      }, 500);
+    }
+
+    this.prePic = function (stopIndex, isJump) {
+      FS_DAY_PAGE.Locked = true;
+      this.aListName.push(this.aListName[0]);
+      this.aListName.shift();
+      this.changeLiOrder(this.aListName);
+      this.index--;
+      if (this.index < 0) {
+        this.index = this.total - 1;
+      }
+      if (!isJump) {
+        this.timerSaleChange(this.index);
+      }
+      if (this.index == stopIndex || stopIndex == undefined) {
+        // 结束Loop
+        FS_DAY_PAGE.Locked = false;
+        return false
+      }
+      // Loop
+      setTimeout(() => {
+        this.prePic(stopIndex);
+      }, 500);
+    }
+
+    this.timerSaleChange = function (index) {
+      this.timerBtns.forEach(element => {
+        element.className = "time_value_item";
+      });
+      this.timerBtns[index].className = "choose time_value_item";
+    }
+
+    this.swiperChange = function (index, isJump) {
+      // 上个选中索引值
+      const preIndex = this.index;
+      const currentIndex = index;
+      let diff = currentIndex - preIndex;
+      let mid = this.total / 2;
+      if (diff > 0) {
+        if (diff >= mid) {
+          this.prePic(currentIndex, isJump)
+        } else {
+          this.nextPic(currentIndex, isJump);
+        }
+      } else if (diff < 0) {
+        if (diff <= -(mid)) {
+          this.nextPic(currentIndex, isJump);
+        } else {
+          this.prePic(currentIndex, isJump);
+        }
+      } else {
+        this.index = currentIndex;
+      }
+    }
+    this.setListName = function () {
+      // 轮播个数 此处需配置 aListName 默认位置
+      switch (Number(this.index)) {
+        case 0:
+          this.aListName = ['list2', 'list3', 'list4', 'list5', 'list1'];
+          this.changeLiOrder(this.aListName, true);
+          break;
+        case 2:
+          this.aListName = ['list5', 'list1', 'list2', 'list3', 'list4'];
+          this.changeLiOrder(this.aListName, true);
+          break;
+        case 3:
+          this.aListName = ['list4', 'list5', 'list1', 'list2', 'list3'];
+          this.changeLiOrder(this.aListName, true);
+          break;
+        case 4:
+          this.aListName = ['list3', 'list4', 'list5', 'list1', 'list2'];
+          this.changeLiOrder(this.aListName, true);
+          break;
+        default:
+          this.aListName = ['list1', 'list2', 'list3', 'list4', 'list5'];
+          this.changeLiOrder(this.aListName, true);
+      }
+    }
+
+    this.changeLiOrder = function (aListName, openTranstion) {
+      for (let i = 0, len = this.aLi.length; i < len; i++) {
+        this.aLi[i].setAttribute('class', this.aListName[i]);
+        // 开启动画效果
+        if (openTranstion) {
+          setTimeout(() => {
+            this.aLi[i].setAttribute("style", "transition:all 0.5s ease")
+          }, 0);
+        }
+      }
+    }
+
+    // 初始化
+    this.init = function () {
+      let that = this;
+      this.setListName();
+      this.imgList.addEventListener("touchstart", function (e) {
+        that.clientObj = {};
+        that.clientObj.startX = e.changedTouches[0].clientX;
+      })
+      this.imgList.addEventListener('touchmove', function (e) {
+        that.clientObj.endX = e.changedTouches[0].clientX;
+      })
+      this.imgList.addEventListener('touchend', function (e) {
+        if (FS_DAY_PAGE.Locked) {
+          return false;
+        }
+        let diff = that.clientObj.endX - that.clientObj.startX;
+        if (diff > 20) {
+          that.prePic();
+        } else if (diff < -20) {
+          that.nextPic();
+        } else {
+          return false;
+        }
+      })
+      // 左右按钮监听
+      this.leftBtn.addEventListener("click", function (e) {
+        if (FS_DAY_PAGE.Locked) {
+          return false;
+        }
+        that.prePic();
+      })
+      this.rightBtn.addEventListener("click", function (e) {
+        if (FS_DAY_PAGE.Locked) {
+          return false;
+        }
+        that.nextPic();
+      })
+      // 时间轴按钮监听
+      this.timerBtns.forEach((element, index) => {
+        element.addEventListener("click", function (e) {
+          if (FS_DAY_PAGE.Locked) {
+            return false;
+          }
+          // 时间轴change
+          that.timerSaleChange(index);
+          // 轮播change
+          that.swiperChange(index, true);
+        })
+      })
+
+      // 产品切换
+      let toggleCardAlls = document.querySelectorAll(".toggleCard");
+      toggleCardAlls.forEach(element => {
+        let card_items = element.querySelectorAll(".toggleCard .card_item");
+        card_items.forEach((element, index) => {
+          element.addEventListener("click", function () {
+            console.log(index);
+            let toggleCards = this.parentNode.parentNode.querySelectorAll(".piece_box .piece");
+            let activeBtn = this.parentNode.querySelector(".activeBtn");
+            let current_card_items = card_items;
+
+            console.log(toggleCards, activeBtn, current_card_items);
+            toggleCards.forEach((item, i) => {
+              item.className = "piece";
+            })
+            current_card_items.forEach((ele, index) => {
+              ele.className = "card_item";
+            })
+            setTimeout(() => {
+              current_card_items[index].className = "active card_item";
+            }, 200);
+            toggleCards[index].className = "piece active";
+            if (index == 0) {
+              activeBtn.style.left = "2%";
+            } else {
+              activeBtn.style.left = "51%";
+            }
+          })
+        })
+
+        // 划入事件
+        element.addEventListener("mouseenter", function () {
+          this.querySelector(".activeBtn ").className = "activeBtn activeBtn_run"
+        })
+      })
+
+    }
+  }
+
+  // 初始化
+  let mSwiper = new Swiper();
+
+  mSwiper.init();
+</script>

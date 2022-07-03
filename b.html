@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 200px;
+        margin: auto;
+    }
+
+    .warpper {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        perspective: 800px;
+        transform-style: preserve-3d;
+
+    }
+
+    .box .warpper img {
+        width: 300px;
+        height: 200px;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 8px;
+        transition: all 1s ease-in-out;
+    }
+
+    .btn {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 1200px;
+        transform: translate(-50%, -20px);
+    }
+
+    .btn .left,
+    .btn .right {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        background-color: black;
+        color: white;
+        border-radius: 15%;
+        position: absolute;
+    }
+
+    .btn .left {
+        left: 0;
+    }
+
+    .btn .right {
+        right: 0;
+    }
+
+    .btn span:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .points {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translate(-50%, 200px);
+        height: 14px;
+    }
+
+    .points li {
+        display: inline-block;
+        list-style: none;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 5px;
+    }
+
+    .points .current {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="warpper">
+            <img src="./src/img/Rectangle.png" alt="">
+            <img src="./src/img/Rectangle.png" alt="">
+            <img src="./src/img/Rectangle.png" alt="">
+            <img src="./src/img/Rectangle.png" alt="">
+        </div>
+        <div class="btn" id="btn">
+            <span class="left">
+                < </span>
+                    <span class="right"> > </span>
+        </div>
+        <ul class="points">
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var imgs = document.querySelectorAll("img")
+    var btns = document.querySelectorAll("span")
+    var ul = document.querySelector(".points")
+    var lis = document.getElementsByTagName("li")
+    var timer
+    var current = 0 // 当前播放图片的索引
+    var flag = true //点击防抖节流
+    var len = imgs.length //图片长度
+    function loadFirst() {
+        imgMove()
+        bind()
+        btnClick()
+        getDot()
+        showDot()
+        autoPlay()
+    }
+    loadFirst()
+    function imgMove() {
+        var mlen = Math.floor(len / 2)
+        for (var i = 0; i < mlen; i++) {
+            // 当前播放图片索引值
+            var rimg = current + 1 + i
+            var limg = len + current - 1 - i
+            if (rimg >= len) {
+                rimg -= len
+            }
+            if (limg >= len) {
+                limg -= len
+            }
+            imgs[limg].style.transform = `translateX(${150 * (i + 1)}px) translateZ(${200 - i * 100}px) rotateY(-30deg)`
+            imgs[rimg].style.transform = `translateX(${-150 * (i + 1)}px) translateZ(${200 - i * 100}px) rotateY(30deg)`
+        }
+        imgs[current].style.transform = `translateZ(300px)`
+    }
+    // 自动播放的函数
+    function autoPlay() {
+        timer = setInterval(function () {
+            if (current >= len - 1) {
+                current = 0
+            } else {
+                current++
+            }
+            imgMove()
+            autoLi()
+        }, 3000)
+    }
+    // 点击图片进行播放
+    function bind() {
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                current = i
+                imgMove()
+                autoLi()
+            }
+            imgs[i].onmouseover = function () {
+                clearInterval(timer)
+            }
+            imgs[i].onmouseout = function () {
+                autoPlay()
+            }
+        }
+    }
+    // 点击左右按钮
+    function btnClick() {
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                // 防止狂点击
+                if (!flag) {
+                    return
+                }
+                flag = false
+                if (i == 0) {
+                    // 上一张
+                    if (current <= 0) {
+                        current = len - 1
+                    } else {
+                        current--
+                    }
+                } else {
+                    //下一张
+                    if (current >= len - 1) {
+                        current = 0
+                    } else {
+                        current++
+                    }
+                }
+                setTimeout(function () {
+                    flag = true
+                }, 1000)
+
+                imgMove()
+                autoLi()
+
+            }
+            btns[i].onmouseenter = function () {
+                clearInterval(timer)
+            }
+            btns[i].onmouseout = function () {
+                autoPlay()
+            }
+        }
+    }
+    // 点
+    function getDot() {
+        for (var i = 0; i < len; i++) {
+            ul.innerHTML += `<li></li>`
+        }
+        lis[0].classList.add("current")
+    }
+    function showDot() {
+        for (let i = 0; i < len; i++) {
+            lis[i].onclick = function () {
+                for (var j = 0; j < len; j++) {
+                    lis[j].classList.remove("current")
+                }
+                this.classList.add("current")
+                current = i
+                imgMove()
+            }
+        }
+    }
+    function autoLi() {
+        for (var i = 0; i < len; i++) {
+            if (i == current) {
+                lis[i].classList.add("current")
+            } else {
+                lis[i].classList.remove("current")
+            }
+        }
+    }
+</script>
